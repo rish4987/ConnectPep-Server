@@ -24,7 +24,7 @@ app.use(cors(
 ))
  
 const JWT_SECRET = process.env.JWT_SECRET || 'Dev@tinder$12323'; 
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 4000;
 
 
 app.use('/auth', authRouter);
@@ -42,5 +42,5 @@ connectDB();
 
 // Start the server
 app.listen(PORT, () => {
-  console.log("🚀 Server running on http://localhost:3000");
+  console.log(`Server running on port ${PORT}`);
 });
