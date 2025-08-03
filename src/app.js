@@ -18,7 +18,7 @@ app.use(cookieParser());
 dotenv.config();
 app.use(cors(
   {
-    origin:'https://connectpep.onrender.com',
+    origin:'https://connect-pep.vercel.app',
     credentials: true
   }
 ))
