@@ -24,7 +24,7 @@ app.use(cors(
 ))
  
 const JWT_SECRET = process.env.JWT_SECRET || 'Dev@tinder$12323'; 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 
 
 app.use('/auth', authRouter);
